@@ -7,6 +7,6 @@
   <display-name>web-debug-tag-example</display-name>
     <context-param>
         <param-name>webdebug.excludes</param-name>
-        <param-value>org.*,__spring*,__sitemesh*,org.apache.catalina*</param-value>
+        <param-value>__spring.*,__sitemesh.*,org.apache.jasper.*,org.apache.catalina.*</param-value>
     </context-param>
 </web-app>
