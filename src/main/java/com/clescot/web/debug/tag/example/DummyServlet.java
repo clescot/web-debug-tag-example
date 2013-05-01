@@ -28,6 +28,7 @@ public class DummyServlet  extends javax.servlet.http.HttpServlet {
         servletContext.setAttribute("invocation times", invocations);
         session.setAttribute("dummySessionValue", random.nextLong());
         req.setAttribute("dummySessionValue", new DummyParent());
+        req.setAttribute("test", new Test());
 
         RequestDispatcher rd = req.getRequestDispatcher("/index.jsp");
         rd.forward(req, resp);

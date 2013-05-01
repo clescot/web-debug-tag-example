@@ -15,15 +15,48 @@
       <scope>test</scope>
     </dependency>
       <dependency>
-          <groupId>org.glassfish</groupId>
-          <artifactId>javax.servlet</artifactId>
-          <version>3.1</version>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.glassfish.web</groupId>
+          <artifactId>jstl-impl</artifactId>
+          <version>1.2</version>
+          <exclusions>
+              <exclusion>
+                  <artifactId>servlet-api</artifactId>
+                  <groupId>javax.servlet</groupId>
+              </exclusion>
+              <exclusion>
+                  <artifactId>jsp-api</artifactId>
+                  <groupId>javax.servlet.jsp</groupId>
+              </exclusion>
+              <exclusion>
+                  <artifactId>jstl-api</artifactId>
+                  <groupId>javax.servlet.jsp.jstl</groupId>
+              </exclusion>
+          </exclusions>
       </dependency>
       <dependency>
           <groupId>fr.figarocms</groupId>
           <artifactId>web-debug-tag</artifactId>
-          <version>1.4</version>
+          <version>1.5-SNAPSHOT</version>
       </dependency>
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.0.12</version>
+      </dependency>
+    
   </dependencies>
   <build>
     <finalName>web-debug-tag-example</finalName>
