@@ -1,6 +1,8 @@
 web-debug-tag-example
 =====================
 
+# This project is **archived**, i.e **no longer maintained**.
+
 This project illustrate usage of the [web-debug-tag](https://github.com/figarocms/web-debug-tag) , in support of [an article (in french)](http://clescot.com/blog/2013/05/03/web-debug-tag-comment-visualiser-facilement-les-variables-disponibles-dans-les-jsp).
 
 
